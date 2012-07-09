@@ -1,0 +1,37 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/reset";
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+@import "bootstrap/layouts";
+@import "bootstrap/hero-unit";
+@import "bootstrap/type";
+@import "bootstrap/thumbnails";
+
+.page-header {
+  h3 { line-height: 1; } }
+
+.contact-methods {
+  list-style: none;
+  padding: 0;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    float: left;
+    margin-right: 5px; } }
+
+.contact-method {
+  height: 24px;
+  margin-bottom: 15px;
+
+  .address {
+    float: left;
+    font-style: normal; }
+
+  address {
+    float: left; } }
+
+@import "icon/*.png";
+@include all-icon-sprites;
