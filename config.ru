@@ -10,7 +10,7 @@ module Rack
       orig_path = env['PATH_INFO']
       found = nil
 
-      @tru.each do |path|
+      @try.each do |path|
         resp = @static.call env.merge!({'PATH_INFO' => orig_path + path})
         if resp[0] != 404
           found = resp
