@@ -13,11 +13,20 @@
   float: left; }
 
 .header {
+  overflow: hidden;
   margin-top: 1em;
-  @extend .hero-unit }
+  @extend .hero-unit;
+  padding: 35px;
+
+  h1 {
+    margin-bottom: 12px; }
+
+  img {
+    @include border-radius(6px);
+    float: right; } }
 
 .hgroup {
-  width: 60%;
+  width: 50%;
   float: left; }
 
 .features {
@@ -32,6 +41,9 @@
 
 h3 {
   line-height: 1; }
+
+.feature.est img, .feature.metals img {
+  @include border-radius(6px); }
 
 .contact-methods {
   list-style: none;
