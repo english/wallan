@@ -2,14 +2,8 @@
 %html
   %head
     %meta{:charset => "utf-8"}
-
-    %title
-      = data.page.title || "W. Allan & Sons - Scrap Metal Merchants, Carlisle"
-
     = stylesheet_link_tag "normalize", "all"
-    = javascript_include_tag  "all"
-    /[if lt IE 9]
-      %script{:src => "http://html5shim.googlecode.com/svn/trunk/html5.js"}
+    %title= data.page.title || "W. Allan & Sons - Scrap Metal Merchants, Carlisle"
 
   %body
     .container
