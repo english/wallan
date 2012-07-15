@@ -123,15 +123,15 @@ a:hover {
   text-decoration: underline; }
 
 /* line 542, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.row {
+.row, .features, .contact {
   margin-left: -20px;
   *zoom: 1; }
   /* line 15, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-  .row:before, .row:after {
+  .row:before, .features:before, .contact:before, .row:after, .features:after, .contact:after {
     display: table;
     content: ""; }
   /* line 19, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-  .row:after {
+  .row:after, .features:after, .contact:after {
     clear: both; }
 
 /* line 547, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -156,7 +156,7 @@ a:hover {
   width: 220px; }
 
 /* line 560, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.span4 {
+.span4, .feature, .contact-details {
   width: 300px; }
 
 /* line 560, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -172,7 +172,7 @@ a:hover {
   width: 540px; }
 
 /* line 560, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.span8 {
+.span8, .map {
   width: 620px; }
 
 /* line 560, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -278,7 +278,7 @@ a:hover {
     width: 23.404%;
     *width: 23.351%; }
   /* line 595, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-  .row-fluid .span4 {
+  .row-fluid .span4, .row-fluid .feature, .row-fluid .contact-details {
     width: 31.915%;
     *width: 31.862%; }
   /* line 595, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -294,7 +294,7 @@ a:hover {
     width: 57.447%;
     *width: 57.394%; }
   /* line 595, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-  .row-fluid .span8 {
+  .row-fluid .span8, .row-fluid .map {
     width: 65.957%;
     *width: 65.904%; }
   /* line 595, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
@@ -341,7 +341,7 @@ a:hover {
     clear: both; }
 
 /* line 4, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_hero-unit.scss */
-.hero-unit {
+.hero-unit, .header {
   padding: 60px;
   margin-bottom: 30px;
   background-color: #eeeeee;
@@ -349,14 +349,14 @@ a:hover {
   -moz-border-radius: 6px;
   border-radius: 6px; }
   /* line 9, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_hero-unit.scss */
-  .hero-unit h1 {
+  .hero-unit h1, .header h1 {
     margin-bottom: 0;
     font-size: 60px;
     line-height: 1;
     color: inherit;
     letter-spacing: -1px; }
   /* line 16, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_hero-unit.scss */
-  .hero-unit p {
+  .hero-unit p, .header p {
     font-size: 18px;
     font-weight: 200;
     line-height: 27px;
@@ -435,13 +435,13 @@ h6 {
   text-transform: uppercase; }
 
 /* line 77, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-.page-header {
+.page-header, .title {
   padding-bottom: 17px;
   margin: 18px 0;
   border-bottom: 1px solid #eeeeee; }
 
 /* line 82, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-.page-header h1 {
+.page-header h1, .title h1 {
   line-height: 1; }
 
 /* line 92, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/bootstrap-sass-2.0.4.0/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -634,33 +634,80 @@ a.thumbnail:hover {
 .thumbnail .caption {
   padding: 9px; }
 
-/* line 12, all.css.scss */
-.page-header h3 {
+/* line 15, all.css.scss */
+.header {
+  overflow: hidden;
+  margin-top: 1em;
+  padding: 35px; }
+  /* line 21, all.css.scss */
+  .header h1 {
+    margin-bottom: 12px; }
+  /* line 24, all.css.scss */
+  .header img {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    float: right; }
+
+/* line 28, all.css.scss */
+.hgroup {
+  width: 50%;
+  float: left; }
+
+/* line 35, all.css.scss */
+.feature {
+  margin-left: 20px;
+  float: left; }
+
+/* line 42, all.css.scss */
+h3 {
   line-height: 1; }
 
-/* line 14, all.css.scss */
+/* line 45, all.css.scss */
+.feature.est img, .feature.metals img {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+/* line 48, all.css.scss */
 .contact-methods {
   list-style: none;
   padding: 0; }
-  /* line 18, all.css.scss */
-  .contact-methods .icon {
-    width: 24px;
-    height: 24px;
-    display: block;
-    float: left;
-    margin-right: 5px; }
 
-/* line 25, all.css.scss */
-.contact-method {
+/* line 52, all.css.scss */
+.icon {
+  width: 24px;
   height: 24px;
+  display: block;
+  float: left;
+  margin-right: 5px; }
+
+/* line 62, all.css.scss */
+.map {
+  margin-left: 20px;
+  float: left; }
+
+/* line 66, all.css.scss */
+.contact-details {
+  margin-left: 20px;
+  float: left; }
+
+/* line 70, all.css.scss */
+.opening-hours {
+  margin-bottom: 12px; }
+
+/* line 73, all.css.scss */
+.contact-method {
   margin-bottom: 15px; }
-  /* line 29, all.css.scss */
-  .contact-method .address {
-    float: left;
-    font-style: normal; }
-  /* line 33, all.css.scss */
-  .contact-method address {
-    float: left; }
+
+/* line 76, all.css.scss */
+.address {
+  overflow: hidden;
+  font-style: normal; }
+
+/* line 80, all.css.scss */
+address {
+  float: left; }
 
 /* line 82, icon/*.png */
 .icon-sprite, .icon-email, .icon-email_dark, .icon-phone, .icon-phone_dark, .icon-pin, .icon-pin_dark {
