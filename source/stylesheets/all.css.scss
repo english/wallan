@@ -67,11 +67,14 @@ h3 {
   @include col;
   @extend .span4; }
 
+.opening-hours {
+  margin-bottom: 12px; }
+
 .contact-method {
   margin-bottom: 15px; }
 
 .address {
-  float: left;
+  overflow: hidden;
   font-style: normal; }
 
 address {
