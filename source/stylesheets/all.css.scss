@@ -8,30 +8,62 @@
 @import "bootstrap/type";
 @import "bootstrap/thumbnails";
 
-.page-header {
-  h3 { line-height: 1; } }
+@mixin col {
+  margin-left: 20px;
+  float: left; }
+
+.header {
+  margin-top: 1em;
+  @extend .hero-unit }
+
+.hgroup {
+  width: 60%;
+  float: left; }
+
+.features {
+  @extend .row }
+
+.feature {
+  @extend .span4;
+  @include col; }
+
+.title {
+  @extend .page-header; }
+
+h3 {
+  line-height: 1; }
 
 .contact-methods {
   list-style: none;
-  padding: 0;
+  padding: 0; }
 
-  .icon {
-    width: 24px;
-    height: 24px;
-    display: block;
-    float: left;
-    margin-right: 5px; } }
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  float: left;
+  margin-right: 5px; }
+
+.contact {
+  @extend .row; }
+
+.map {
+  @extend .span8;
+  @include col; }
+
+.contact-details {
+  @include col;
+  @extend .span4; }
 
 .contact-method {
-  height: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; }
 
-  .address {
-    float: left;
-    font-style: normal; }
+.address {
+  float: left;
+  font-style: normal; }
 
-  address {
-    float: left; } }
+address {
+  float: left; }
 
 @import "icon/*.png";
 @include all-icon-sprites;

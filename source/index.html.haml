@@ -1,59 +1,66 @@
-.hero-unit
-  %h1 W Allan &amp; Sons
-  %h2 Scrap Metal Merchants, Carlisle
+.header
+  .hgroup
+    %h1 W Allan &amp; Sons
+    %h2 Scrap Metal Merchants, Carlisle
+  = image_tag "http://i.istockimg.com/file_thumbview_approve/14692720/2/stock-photo-14692720-crane-with-open-claw-metal-recycling-junkyard-blue-sky.jpg", :width => "300px"
 
-.row
-  .span4
-    .page-header
-      %h3 Service 1
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+.features
+  .feature
+    .title
+      %h3 Established for Over 70 Years
+    %p.blurb
+      W Allan &amp; Sons is a family run scrap metal merchant established for
+      over 70 years. We pride ourselves in providing an efficient and reliable
+      service to both new and existing customers. We are licenced from the
+      environment agency and the city council to meet your needs, small or
+      large.
+    %p= image_tag "http://i.istockimg.com/file_thumbview_approve/16558943/2/stock-photo-16558943-scrap-metal-background.jpg", :width => "300px"
 
-  .span4
-    .page-header
-      %h3 Service 2
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+  .feature
+    .title
+      %h3 Ferrous &amp; Non-Ferrous Metals
+    %p.blurb
+      We deal in ferrous (steel cast etc.) and non-ferrous (copper, brass,
+      aluminium etc.) metals, purchased at a fair price.
+    %p= image_tag "http://i.istockimg.com/file_thumbview_approve/530233/2/stock-photo-530233-copper-wire.jpg", :width => "300px"
 
-  .span4
-    .page-header
-      %h3 Service 3
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+  .feature
+    .title
+      %h3 Skips for Hire
+    %p.blurb
+      We also provide skips from 10 cubic yards to 40 cubic yards to hire.
+      Please contact us for further information.
+    %p= image_tag "skips.jpg", :width => "300px"
 
 %hr/
 
-.row
-  .span8
+.contact
+  .map
     .page-header
       %h3 Find Us
     .thumbnail
-      %img{:src => "http://placehold.it/620x300"}
-      %h5 Google Map
-      %p
-        %a{:href => "http://goo.gl/maps/2adJ"} Link here
+      %iframe{:frameborder => "0", :height => "300", :marginheight => "0",
+        :marginwidth => "0", :scrolling => "no", :width => "610",
+        :src => "https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=Waller+Street+Works,+Waller+Street,+Carlisle,+CA1+2DA&aq=&sll=54.871866,-3.019867&sspn=0.156262,0.327187&ie=UTF8&hq=Waller+Street+Works,+Waller+Street,&hnear=Carlisle+CA1+2DA,+United+Kingdom&t=m&cid=17015588351969613916&ll=54.894183,-2.910519&spn=0.014808,0.053129&z=14&output=embed&iwloc=&amp;"}
+      %br/
+      %small
+        %a{:href => "https://maps.google.co.uk/maps?f=q&source=embed&hl=en&geocode=&q=Waller+Street+Works,+Waller+Street,+Carlisle,+CA1+2DA&aq=&sll=54.871866,-3.019867&sspn=0.156262,0.327187&ie=UTF8&hq=Waller+Street+Works,+Waller+Street,&hnear=Carlisle+CA1+2DA,+United+Kingdom&t=m&cid=17015588351969613916&ll=54.894183,-2.910519&spn=0.014808,0.053129&z=14", :style => "color:#0000FF;text-align:left"} View Larger Map
 
-  .span4
+  .contact-details
     .page-header
       %h3 Contact Us
 
     %ul.contact-methods
       %li.contact-method.phone
         %span.icon.icon-phone_dark
-        01228 524433
+        Office: 01228 526 023
+        %br/
+        Robert: 07770 482 255
 
       %li.contact-method.email
         %span.icon.icon-email_dark
-        %a{:href => "mail_to:info@example.co.uk"} info@example.co.uk
+        %a{:href => "mail_to:enquires@wallanscrap.co.uk"}
+          enquires@wallanscrap.co.uk
 
       %li.contact-method.address
         %span.icon.icon-pin_dark
