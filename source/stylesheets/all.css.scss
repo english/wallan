@@ -7,6 +7,7 @@
 @import "bootstrap/hero-unit";
 @import "bootstrap/type";
 @import "bootstrap/thumbnails";
+@import "bootstrap/tables";
 
 @mixin col {
   margin-left: 20px;
@@ -18,16 +19,31 @@
   @extend .hero-unit;
   padding: 35px;
 
-  h1 {
-    margin-bottom: 12px; }
+  .address, .table {
+    float: left; }
+
+  .address {
+    width: 33%;
+    font-size: 14px;
+    line-height: 1.5; }
 
   img {
     @include border-radius(6px);
     float: right; } }
 
+.table {
+  width: 66%;
+  margin-top: -4px;
+
+  .label {
+    text-align: right; } }
+
 .hgroup {
   width: 50%;
   float: left; }
+
+.subtitle {
+  margin-bottom: 12px; }
 
 .features {
   @extend .row }
@@ -56,7 +72,7 @@ h3 {
   float: left;
   margin-right: 5px; }
 
-.contact {
+.find-contact {
   @extend .row; }
 
 .map {
@@ -65,20 +81,20 @@ h3 {
 
 .contact-details {
   @include col;
-  @extend .span4; }
+  @extend .span4;
+
+  address {
+    float: left; }
+
+  .address {
+    overflow: hidden;
+    font-style: normal; } }
 
 .opening-hours {
   margin-bottom: 12px; }
 
 .contact-method {
   margin-bottom: 15px; }
-
-.address {
-  overflow: hidden;
-  font-style: normal; }
-
-address {
-  float: left; }
 
 @import "icon/*.png";
 @include all-icon-sprites;

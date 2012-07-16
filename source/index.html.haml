@@ -1,7 +1,37 @@
 .header
   .hgroup
-    %h1 W Allan &amp; Sons
-    %h2 Scrap Metal Merchants, Carlisle
+    %h1.title W Allan &amp; Sons
+    %h2.subtitle Scrap Metal Merchants
+    .contact
+      %address.address
+        Waller Street Works
+        %br/
+        Waller Street
+        %br/
+        Carlisle
+        %br/
+        Cumbria
+        %br/
+        CA1 2DA 
+
+      %table.table.table-bordered.table-striped.table-condensed
+        %tbody
+          %tr
+            %th.label Opening Hours
+            %td Monday-Friday: 8am til 5pm
+          %tr
+            %th.label
+            %td Saturday: 9am til 12pm
+          %tr
+            %th.label Phone
+            %td Office: 01228 526 023
+          %tr
+            %th.label
+            %td Robert: 07770 482 255
+          %tr
+            %th.label Email
+            %td= link_to "enquires@wallanscrap.co.uk", "mailto:enquires@wallanscrap.co.uk"
+
   = image_tag "crane-scrap.jpg", :width => "380px"
 
 .features
@@ -36,7 +66,7 @@
 
 %hr/
 
-.contact
+.find-contact
   .map
     .page-header
       %h3 Find Us
@@ -75,10 +105,12 @@
         %address
           W Allan &amp; Sons
           %br/
-          Waller Street Works,
+          Waller Street Works
           %br/
-          Waller Street,
+          Waller Street
           %br/
-          Carlisle,
+          Carlisle
           %br/
-          CA1 2DA 
+          Cumbria
+          %br/
+          CA1 2DA
